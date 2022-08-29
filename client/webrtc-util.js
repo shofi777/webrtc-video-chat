@@ -44,7 +44,7 @@ export function createPeerConnection(config = {
 	// TODO: IMPLEMENT END
 
 	peerConnection.onicecandidate = withPeerContext(config.onicecandidate, peerContext);
-  peerConnection.oniceconnectionstatechange = withPeerContext(config.oniceconnectionstatechange, peerContext);
+    peerConnection.oniceconnectionstatechange = withPeerContext(config.oniceconnectionstatechange, peerContext);
 	peerConnection.onsignalingstatechange = withPeerContext(config.onsignalingstatechange, peerContext);
 	peerConnection.onnegotiationneeded = withPeerContext(config.onnegotiationneeded, peerContext);
 	peerConnection.ontrack = withPeerContext(config.ontrack, peerContext);

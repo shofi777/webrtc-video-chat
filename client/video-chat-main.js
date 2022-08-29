@@ -196,7 +196,7 @@ async function respondToOffer(message = {
   await peerConnection.setLocalDescription(await peerConnection.createAnswer());
 
   sendSignalMessage({
-		recipientId: message.senderId,
+	recipientId: message.senderId,
     type: messageTypes.answer,
     sdp: peerConnection.localDescription
   });

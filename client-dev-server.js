@@ -5,7 +5,7 @@ const prod = !!process.argv.includes('--prod')
 const port = prod ? 443 : 5500
 
 let devServerConfig = {
-	port,
+	port: 5500,
 	host: '0.0.0.0',
 	root: './client',
 	open: false,
